@@ -1,0 +1,4 @@
+name: Flex
+markdown: kramdown
+pygments: true
+destination: ../docs
