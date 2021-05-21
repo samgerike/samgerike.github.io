@@ -2,10 +2,24 @@
 layout: default
 title: Home
 photos:
-- src: https://replit.com/@ICOM101/JekyllSite-SamuelGerike#site/images/1.jpg
-  alt: Lorem ipsum dolor sit amet
-- src: 
-  alt: Lorem ipsum dolor sit amet
+- src: /images/1.jpg
+  alt: Rolleiflex - Philadelphia Japanese Garden - 2020
+- src: /images/2.jpg
+  alt: Rolleiflex - My Backyard - 2020
+- src: /images/3.jpg
+  alt: Rolleiflex - Fairmount Park, Philadelphia - 2020
+- src: /images/4.jpg
+  alt: Rolleiflex - Fairmount Park, Philadelphia - 2020
+- src: /images/5.jpg
+  alt: Rolleiflex - Somewhere in Philadelphia - 2020
+- src: /images/6.jpg
+  alt: Rolleiflex - Somewhere in Philadelphia - 2020
+- src: /images/7.jpg
+  alt: Rolleiflex - Somewhere in Philadelphia - 2020
+- src: /images/8.jpg
+  alt: Rolleiflex - Under Highway in Philadelphia - 2020
+- src: /images/9.jpg
+  alt: Rolleiflex - Friends in Fairmount Park -2020
 ---
 
 {% comment %}
@@ -16,6 +30,6 @@ photos:
 
 <section class="gallery">
   {% for img in page.photos %}
-    <img src={{img.src}} alt={{img.alt}}>
+    <img src="{{img.src}}" alt="{{img.alt}}">
   {% endfor %}
 </section>
