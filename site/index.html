@@ -1,8 +1,21 @@
 ---
 layout: default
 title: Home
+photos:
+- src: https://replit.com/@ICOM101/JekyllSite-SamuelGerike#site/images/1.jpg
+  alt: Lorem ipsum dolor sit amet
+- src: 
+  alt: Lorem ipsum dolor sit amet
 ---
 
-{% assign page = site.posts.first %}
-{% assign content = page.content %}
-{% include post.html %}
+{% comment %}
+  {% assign page = site.posts.first %}
+  {% assign content = page.content %}
+  {% include post.html %}
+{% endcomment %}
+
+<section class="gallery">
+  {% for img in page.photos %}
+    <img src={{img.src}} alt={{img.alt}}>
+  {% endfor %}
+</section>

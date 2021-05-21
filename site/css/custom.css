@@ -1,0 +1,19 @@
+img {max-width: 100%}
+
+.gallery {
+  display: grid;
+  grid-gap: 3rem;
+  margin-top: 3rem;
+}
+
+.gallery img {width: 100%}
+
+@media screen and (min-width: 600px){
+  .gallery {
+    grid-gap: 2rem;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .gallery img {width: auto}
+
+}
